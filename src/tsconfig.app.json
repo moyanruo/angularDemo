@@ -1,9 +1,17 @@
 {
+  "name": "app配置文件",
   "extends": "../tsconfig.json",
   "compilerOptions": {
+    "baseUrl": "./",
     "outDir": "../out-tsc/app",
     "module": "es2015",
-    "types": []
+    "types": [],
+    "paths": {
+      "@core": ["app/core/"],
+      "@core/*": ["app/core/*"],
+      "@env": ["environments/"],
+      "@env/*": ["environments/*"]
+    }
   },
   "exclude": [
     "src/test.ts",

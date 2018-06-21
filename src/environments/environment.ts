@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  NODE_ENV: "development",
+  SERVER_URL: "http://dev-baokao-api.chfp.org",
+  production: false,
+  hmr: false,
+  useHash: true
 };
 
 /*
